@@ -30,14 +30,14 @@
     },
     "extra": {
       "eas": {
-        "projectId": "48e0afbc-7367-4243-93ce-e6a435a4777f"
+        "projectId": "2d582d23-192c-4c63-9834-46c71b6774c3"
       }
     },
     "plugins": [
       [
         "expo-notifications",
         {
-          "icon": "./local/assets/notification-icon.png",
+          "icon": "./local/assets/icon.png",
           "color": "#ffffff",
           "sounds": [
             "./local/assets/notification-sound.wav",

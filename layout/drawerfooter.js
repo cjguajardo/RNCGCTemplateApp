@@ -1,7 +1,7 @@
-import React from "react";
-import { version, author } from "../package.json";
-import { Box, VStack, Divider, Center, Text, useColorMode } from "native-base";
-import CGCMainContext from "../context/CGCMainContext";
+import React from 'react';
+import { version, author } from '../package.json';
+import { Box, VStack, Divider, Center, Text, useColorMode } from 'native-base';
+import CGCMainContext from '../context/CGCMainContext';
 
 const DrawerFooter = () => {
   const { getLabel } = React.useContext(CGCMainContext);
@@ -12,28 +12,24 @@ const DrawerFooter = () => {
       w="90%"
       left="5%"
       marginTop={5}
-      bg={colorMode === "dark" ? "primaryDark.50" : "gray.100"}
+      bg={colorMode === 'dark' ? 'primaryDark.50' : 'gray.100'}
     >
       <VStack alignContent="center">
         <Center marginTop={2}>
-          <Text
-            colorScheme={colorMode === "dark" ? "light" : "primary"}
-            bold
-            fontSize={12}
-          >
-            {author.name || "CGCApps"} © {new Date().getFullYear()}
+          <Text color="primary.600" bold fontSize={12}>
+            {author.name || 'CGCApps'} © {new Date().getFullYear()}
           </Text>
         </Center>
 
         <Center>
-          <Text colorScheme={colorMode === "dark" ? "light" : "info"} bold fontSize={12}>
-            {author.url || "https://cgcapps.cl"}
+          <Text color="info.800" bold fontSize={12}>
+            {author.url || 'https://cgcapps.cl'}
           </Text>
         </Center>
 
         <Center>
-          <Text colorScheme={colorMode === "dark" ? "light" : "primary"} fontSize={11}>
-            {getLabel("version")} {version}
+          <Text color="danger.500" fontSize={11}>
+            {getLabel('version')} {version}
           </Text>
         </Center>
       </VStack>
